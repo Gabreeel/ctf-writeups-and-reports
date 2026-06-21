@@ -1,0 +1,34 @@
+root@ip-10-66-104-187:~# nmap -sC -sV -p- 10.66.158.54
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-06-21 13:23 UTC
+Nmap scan report for ip-10-66-158-54.ec2.internal (10.66.158.54)
+Host is up (0.00015s latency).
+Not shown: 55529 filtered tcp ports (no-response), 10003 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.66.104.187
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.5 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV failed: 550 Permission denied.
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 20:15:4f:1a:46:30:7a:9b:0a:26:2a:4a:fb:80:a5:d2 (RSA)
+|   256 31:a4:d0:95:78:78:0a:25:1b:92:63:bc:16:a7:db:5a (ECDSA)
+|_  256 35:2c:f9:61:fe:85:df:0c:dc:59:df:e0:68:2e:cf:67 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 59.04 seconds

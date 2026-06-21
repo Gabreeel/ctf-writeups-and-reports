@@ -1,0 +1,32 @@
+root@ip-10-66-104-187:~# ftp 10.66.158.54
+Connected to 10.66.158.54.
+220 (vsFTPd 3.0.5)
+Name (10.66.158.54:root): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+550 Permission denied.
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+-rw-rw-r--    1 ftp      ftp           418 Jun 07  2020 locks.txt
+-rw-rw-r--    1 ftp      ftp            68 Jun 07  2020 task.txt
+226 Directory send OK.
+ftp> cat task.txt
+?Invalid command.
+ftp> get locks.txt
+local: locks.txt remote: locks.txt
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for locks.txt (418 bytes).
+100% |*****************************************************************|   418      925.62 KiB/s    00:00 ETA
+226 Transfer complete.
+418 bytes received in 00:00 (310.18 KiB/s)
+ftp> get task.txt
+local: task.txt remote: task.txt
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for task.txt (68 bytes).
+100% |*****************************************************************|    68      470.96 KiB/s    00:00 ETA
+226 Transfer complete.
+68 bytes received in 00:00 (95.13 KiB/s)
+ftp> bye
+221 Goodbye.

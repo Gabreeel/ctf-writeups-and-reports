@@ -1,0 +1,8 @@
+lin@ip-10-66-158-54:~/Documents$ sudo -l
+[sudo] password for lin: 
+Matching Defaults entries for lin on ip-10-66-158-54:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User lin may run the following commands on ip-10-66-158-54:
+    (root) /bin/tar

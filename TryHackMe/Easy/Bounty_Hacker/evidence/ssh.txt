@@ -1,0 +1,29 @@
+root@ip-10-66-104-187:~# ssh lin@10.66.158.54
+The authenticity of host '10.66.158.54 (10.66.158.54)' can't be established.
+ED25519 key fingerprint is SHA256:pxgeurxHEM5nZAyHiT3wamaCJll/qcci3pytqKPWcyg.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.66.158.54' (ED25519) to the list of known hosts.
+lin@10.66.158.54's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-139-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Infrastructure is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Infra to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Mon Aug 11 12:32:35 2025 from 10.23.8.228
+lin@ip-10-66-158-54:~/Desktop$ ls
+user.txt
+lin@ip-10-66-158-54:~/Desktop$ cat user txt
+cat: user: No such file or directory
+cat: txt: No such file or directory
+lin@ip-10-66-158-54:~/Desktop$ cat user.txt
+THM{CR1M3_SyNd1C4T3}
