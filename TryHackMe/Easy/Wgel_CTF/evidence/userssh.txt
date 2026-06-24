@@ -1,0 +1,13 @@
+root@ip-10-65-122-75:~# ssh -i id_rsa jessie@$TARGET
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-45-generic i686)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+8 packages can be updated.
+8 updates are security updates.
+
+jessie@CorpOne:~$ whoami
+jessie

@@ -1,0 +1,30 @@
+...
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+
+
+ <!-- Jessie don't forget to udate the webiste -->
+          </pre>
+          <ul>
+                        <li>
+                           <tt>apache2.conf</tt> is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        </li>
+
+                        <li>
+                           <tt>ports.conf</tt> is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        </li>
+
+                        <li>
+...

@@ -1,0 +1,12 @@
+jessie@CorpOne:~$ ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates
+jessie@CorpOne:~$ cd Documents
+jessie@CorpOne:~/Documents$ ls
+user_flag.txt
+jessie@CorpOne:~/Documents$ cat user flag.txt
+cat: user: No such file or directory
+cat: flag.txt: No such file or directory
+jessie@CorpOne:~/Documents$ cat user_flag.txt
+057c67131c3d5e42dd5cd3075b198ff6
+jessie@CorpOne:~/Documents$ 

